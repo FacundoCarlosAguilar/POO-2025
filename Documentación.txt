@@ -1,0 +1,41 @@
+####################################################
+#           NORMAS DE CÓDIGO Y COMMITS            #
+#          (Actualizado: 18/08/2025)                   #
+####################################################
+
+=== ESTILO DE CÓDIGO ===
+- Tabulación: Ordenada y Limpia.
+- Límite de código: No ahí, que no tenga ambigüedad.
+- Llaves SIEMPRE, incluso en bloques de 1 línea:
+    if (cond) { 
+      doSomething(); 
+    }
+
+=== NOMBRADO ===
+- Variables/funciones: Claras y Identifiacadas.
+- Clases: Claras y Identifiacadas.
+- Constantes: Claras y Identifiacadas.
+- Booleanos: Claras y Identifiacadas.
+
+=== COMMITS ===
+- Formato: [TIPO] Mensaje breve (máx. 50 chars).
+- Tipos válidos: 
+  [FEAT]    -> Nueva funcionalidad.
+  [FIX]     -> Corrección de bug.
+  [REFACTOR]-> Mejora de código sin cambiar funcionalidad.
+  [DOCS]    -> Cambios en documentación.
+  [STYLE]   -> Ajustes de formato (espacios, etc.).
+
+Ejemplo:
+[FIX] Corrige error al validar formulario de login
+
+=== BUENAS PRÁCTICAS ===
+- Comentar código complejo (// o /** */).
+- NO dejar código comentado obsoleto.
+- Testear cambios localmente antes de commit.
+
+
+=== Documentación de Código no CARGADO ===
+- Una documentación de su funcionalidad.
+- Una documentación no CARGADA de cada tipo.
+- Documentación sin ambigüedad.
