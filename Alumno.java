@@ -1,12 +1,15 @@
 import java.util.Scanner;
 
+
 public class Alumno {
+    //atributos de clase
     private String NombreAlumno; 
     private String Apellido; 
     private int Edad;
     private String Curso;
     private int CantMaterias;
 
+    //Constructor / asignar datos / formar objeto
     public Alumno(String NombreAlumno, String Apellido, String Curso, int Edad, int CantMaterias) {
         this.NombreAlumno = NombreAlumno;
         this.Apellido = Apellido;
@@ -15,6 +18,7 @@ public class Alumno {
         this.CantMaterias = CantMaterias;
     }
 
+    //Constructor vacio para asignar valores por defecto
     public Alumno() {
         this.NombreAlumno = "Sin nombre";
         this.Apellido = "Sin apellido";
@@ -22,7 +26,8 @@ public class Alumno {
         this.Edad = 0;
         this.CantMaterias = 0;
     }
-
+    
+    //Setters / asignar datos
     public void ingresarDatosAlumno() {
         Scanner scanner = new Scanner(System.in);
         
@@ -42,7 +47,8 @@ public class Alumno {
         System.out.println("Ingresa la cantidad de materias: ");
         this.CantMaterias = scanner.nextInt();
     }
-
+    //getters / obterner datos
+    
     public String getNombreAlumno() {
         return NombreAlumno;
     }

@@ -10,7 +10,7 @@ public class Clase {
         
         boolean continuar = true;
         int opcion = 0;
-
+        
         while (continuar) {
             System.out.println("\n=== MENÚ PRINCIPAL ===");
             System.out.println("1. Ver datos Docente");
@@ -23,7 +23,7 @@ public class Clase {
             System.out.print("Seleccione una opción: ");
             
             opcion = scanner.nextInt();
-            scanner.nextLine(); // Limpiar buffer
+            scanner.nextLine();
 
             switch (opcion) {
                 case 1:

@@ -7,6 +7,7 @@ public class Asignatura {
     private int CantMaterias;
     private double NotaAlum;
 
+    //Constructor / asignando valores por parametros
     public Asignatura(String NombreMateria, String Aula, int HoraMateria, int CantMaterias, double NotaAlum) {
         this.NombreMateria = NombreMateria;
         this.Aula = Aula;
@@ -15,6 +16,7 @@ public class Asignatura {
         this.NotaAlum = NotaAlum;
     }
 
+    //Constructor vacio / asignando valores por defecto
     public Asignatura() {
         this.NombreMateria = "Sin materia";
         this.Aula = "Sin aula";
@@ -23,6 +25,7 @@ public class Asignatura {
         this.NotaAlum = 0.0;
     }
 
+    //Setters / Metodos de modificacion
     public void ingresarDatosAsignatura() {
         Scanner scanner = new Scanner(System.in);
         
@@ -42,6 +45,7 @@ public class Asignatura {
         this.NotaAlum = scanner.nextDouble();
     }
 
+    //Getters / Metodos de acceso
     public String getNombreMateria() {
         return NombreMateria;
     }
