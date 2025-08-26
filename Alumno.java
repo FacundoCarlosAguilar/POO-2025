@@ -1,57 +1,65 @@
 import java.util.Scanner;
 
 public class Alumno {
-    Scanner scanner = new Scanner(System.in);
-        private String NombreAlumno; 
-        private String Apellido; 
-        private int Edad;
-        private String Curso;
-        private int CantMaterias;
-    
-    //Constructor => Tipos de Atributos
-    public Alumno(String NombreAlumno, String Apellido, String Curso, int Edad, Scanner scanner) {
-        this.NombreAlumno = " ";
-        this.Apellido = " ";
+    private String NombreAlumno; 
+    private String Apellido; 
+    private int Edad;
+    private String Curso;
+    private int CantMaterias;
+
+    public Alumno(String NombreAlumno, String Apellido, String Curso, int Edad, int CantMaterias) {
+        this.NombreAlumno = NombreAlumno;
+        this.Apellido = Apellido;
+        this.Curso = Curso;
+        this.Edad = Edad;
+        this.CantMaterias = CantMaterias;
+    }
+
+    public Alumno() {
+        this.NombreAlumno = "Sin nombre";
+        this.Apellido = "Sin apellido";
+        this.Curso = "Sin curso";
         this.Edad = 0;
-        this.Curso = " ";
-        
+        this.CantMaterias = 0;
     }
 
-        public Alumno() {
-            Scanner scanner = new Scanner(System.in);
-
-            System.out.println("Ingresa el nombre del alumno");
-            this.NombreAlumno = scanner.nextLine();
-
-            /*  //Documentado
-            System.out.println("ingresa el Apellido del alumno: ");
-            this.Apellido = scanner.nextLine();
+    public void ingresarDatosAlumno() {
+        Scanner scanner = new Scanner(System.in);
         
-            System.out.println("Ingresa la Edad del Alumno: ");
-            this.Edad = scanner.nextInt();
+        System.out.println("Ingresa el nombre del alumno: ");
+        this.NombreAlumno = scanner.nextLine();
         
-            System.out.println("Ingresa la cantidad de materias que cursa: ");
-            this.CantMaterias = scanner.nextInt();
-            
-            System.out.println("Ingresa el año de cursada: ");
-            this.Curso = scanner.nextLine();
-
-            */
+        System.out.println("Ingresa el apellido del alumno: ");
+        this.Apellido = scanner.nextLine();
+        
+        System.out.println("Ingresa la edad del alumno: ");
+        this.Edad = scanner.nextInt();
+        scanner.nextLine(); // Limpiar buffer
+        
+        System.out.println("Ingresa el curso del alumno: ");
+        this.Curso = scanner.nextLine();
+        
+        System.out.println("Ingresa la cantidad de materias: ");
+        this.CantMaterias = scanner.nextInt();
     }
-        
-        public String getNombreAlumno() {
-            return NombreAlumno;
-        }
 
-        public String getApellido() {
-            return Apellido;
-        }
+    public String getNombreAlumno() {
+        return NombreAlumno;
+    }
 
-        public int getEdad() {
-            return Edad;
-        }
+    public String getApellido() {
+        return Apellido;
+    }
 
-        public String getCurso() {
-            return Curso;
-        }
+    public int getEdad() {
+        return Edad;
+    }
+
+    public String getCurso() {
+        return Curso;
+    }
+    
+    public int getCantMaterias() {
+        return CantMaterias;
+    }
 }
