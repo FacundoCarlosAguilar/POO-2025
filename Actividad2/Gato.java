@@ -1,3 +1,4 @@
+package Actividad2;
 public class Gato {
     private String NombreGato;
     private int EdadGato;

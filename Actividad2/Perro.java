@@ -1,10 +1,11 @@
+package Actividad2;
 public class Perro {
     private String NombrePerro;
     private int edadPerro;
     private String razaPerro;
     private String ColorPerro;
     private String SexoPerro;
-        
+
     // Constructor
     public Perro (String NombrePerro, int edadPerro, String razaPerro, String ColorPerro, String SexoPerro){
         this.NombrePerro = NombrePerro;

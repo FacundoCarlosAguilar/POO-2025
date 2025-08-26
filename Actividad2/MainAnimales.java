@@ -1,7 +1,7 @@
+package Actividad2;
 
-public class Animales {
+public class MainAnimales {
     public static void main(String[] args) {
-
 
         Perro perritPerro  = new Perro();
         Gato gatitoGato = new Gato();
